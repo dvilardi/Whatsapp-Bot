@@ -9,7 +9,15 @@ Simple Whatsapp bot that sends custom messages and attach images and videos to a
 
 ## Unfamiliar with Python? Step by step below
 * Install Python from https://www.python.org/
-  * When installing, check the box "Add Python to Environment Variables"
-* On windows, open cmd.exe
-  * 
+ * When installing, check the box "Add Python to Environment Variables"
+* On windows, open cmd.exe and type the following commands
+ * "pip install selenium"
+ * "pip install pandas"
+* Install VS Code from https://code.visualstudio.com/
+ * Or any other IDE that you prefer (PyCharm, Spyder etc.)
+* Install Chrome's webdriver from http://chromedriver.chromium.org/downloads
+ * chromedriver version must be the same as your Google Chrome version
+ * To check your version:
+ * ![](Manual/mImages/00.PNG)
+ * ![](Manual/mImages/01.PNG)
 
