@@ -15,7 +15,7 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
 * Pandas
 * CSV contact list, with names __exactly__ as they are on the source Phone
 
-## Unfamiliar with Python or Selenium? See the complete steup step by step below
+## Unfamiliar with Python or Selenium? See the complete setup step by step below
 * Install Python from https://www.python.org/
   * When installing, check the box "Add Python to Environment Variables"
 * On windows, open cmd.exe and type the following commands
