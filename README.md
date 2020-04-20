@@ -18,6 +18,6 @@ Simple Whatsapp bot that sends custom messages and attach images and videos to a
 * Install Chrome's webdriver from http://chromedriver.chromium.org/downloads
  * chromedriver version must be the same as your Google Chrome version
  * To check your version:
- * ![](Manual/mImages/00.PNG)
- * ![](Manual/mImages/01.PNG)
+ * ![](Manual/mImages/00.png)
+ * ![](Manual/mImages/01.png)
 
