@@ -5,6 +5,7 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
 * Customized messages
 * Multiple attachments per contact
 * CSV-based contact lookup
+* Prints progress on debug console 
 * Uses only reliable and well known libraries
 
 ## Prerequisites and installation
@@ -12,6 +13,7 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
 * Selenium
 * Chromedriver
 * Pandas
+* CSV contact list, with names __exactly__ as they are on the source Phone
 
 ## Unfamiliar with Python or Selenium? See the complete steup step by step below
 * Install Python from https://www.python.org/
@@ -73,4 +75,22 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
   
   ![](Manual/mImages/11.png)
   
+  * Find chat search box HTML tag and type the phone number
+  
+  ![](Manual/mImages/12.png)
+  
+  ![](Manual/mImages/13.png)
+  
+  ![](Manual/mImages/14.png)
+  
+  * Get the found contact's HTML tag using its full name __exactly__ as it is on the phone's contacts list and click it
+  
+  ![](Manual/mImages/15.png)
+  
+  ![](Manual/mImages/16.png)
+
+  * Get the message box HTML tag, write the customize message and send it
+  
+  ![](Manual/mImages/17.png)
+
   
