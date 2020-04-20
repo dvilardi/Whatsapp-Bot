@@ -116,7 +116,16 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
   ![](Manual/mImages/24.png)
   
   * Repeat the process for the next contact on the CSV
-  
-  
-  
-  
+ 
+## About me
+I'm Danilo Vilardi, a Brazilian mechanical engineer with 10+ different hobbies and no time to pursue them all: programmer, photographer, electronic and woodwork dyi adventurer, musician and ocasional CS gaming.
+I'm social on:
+* [Linkedin](https://www.linkedin.com/in/danilo-vilardi/)
+* [Instagram](https://www.instagram.com/dvilardi/)
+* [Facebook](https://www.facebook.com/dvilardi26)
+
+## Acknowledgments
+The following sources were used:
+* Basic Whatsapp bot (sends messages to named groups) (video in portuguese): https://www.youtube.com/watch?v=ISYHWfWvp3E
+* Uploading files with selenium and webdriver (to send attachments): https://www.youtube.com/watch?v=ffHC36iTNRg
+* Uploading single files on whatsapp Web https://www.youtube.com/watch?v=x85ba0VYsYo
