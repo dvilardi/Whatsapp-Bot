@@ -7,6 +7,7 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
 * CSV-based contact lookup
 * Prints progress on debug console 
 * Uses only reliable and well known libraries
+* Source code "map" below to help recalibrate the code with eventual HTML tag changes
 
 ## Prerequisites and installation
 * Python
