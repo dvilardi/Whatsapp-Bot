@@ -9,7 +9,14 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
 * Uses only reliable and well known libraries
 * Source code "map" below to help recalibrate the code with eventual HTML tag changes
 
-## Prerequisites and installation
+## PreRequisites and installation
+* Python
+* Selenium
+* Chromedriver
+* Pandas
+* CSV contact list, with names __exactly__ as they are on the source Phone
+
+## PreRequisites and installation
 * Python
 * Selenium
 * Chromedriver
@@ -126,6 +133,6 @@ I'm social on:
 
 ## Acknowledgments
 The following sources were used:
-* Basic Whatsapp bot (sends messages to named groups) (video in portuguese): https://www.youtube.com/watch?v=ISYHWfWvp3E
+* Basic Whatsapp bot (messages to groups) (video in portuguese): https://www.youtube.com/watch?v=ISYHWfWvp3E
 * Uploading files with selenium and webdriver (to send attachments): https://www.youtube.com/watch?v=ffHC36iTNRg
 * Uploading single files on whatsapp Web https://www.youtube.com/watch?v=x85ba0VYsYo
