@@ -48,6 +48,29 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
   ![](Manual/mImages/05.png)
   
   * Import CSV file with names and phone numbers and convert the generated dataframe to string
-  ![](Manual/mImages/25.png)
+
+  ![](Manual/mImages/25.PNG)
+  
   ![](Manual/mImages/06.png)
+  
+  * Get names and paths of all images on _Images_ folder (where all attachments must be located)
+  
+  ![](Manual/mImages/07.png)
+  
+  * Create 2 custom functions: "clean" phone numbers and retrieve the contacts's first names
+  
+  ![](Manual/mImages/08.png)
+  
+  * Create a webdriver object and navigate to whatsapp web
+  
+  ![](Manual/mImages/09.png)
+  
+  * Wait 15 seconds for page to load and for user to scan QR code
+  
+  ![](Manual/mImages/10.png)
+  
+  * Loop all contacts from the CSV file
+  
+  ![](Manual/mImages/11.png)
+  
   
