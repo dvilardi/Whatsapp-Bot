@@ -47,10 +47,10 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
   
   * Write custom message and leave a _NAME_ key to replace with contact's names
   
-  ![](Manual/mImages/05.png)
+  ![](Manual/mImages/05a.png)
   
   * Import CSV file with names and phone numbers and convert the generated dataframe to string
-    * Depending on your CSV file format, you may want to adjust the separator used (spaces, comma, colon, semicolon etc.)
+    * Depending on your CSV format, you may need to adjust the separator (space, comma, colon, semicolon etc.)
 
   ![](Manual/mImages/25.PNG)
   
@@ -74,7 +74,7 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
   
   * Loop all contacts from the CSV file
   
-  ![](Manual/mImages/11.png)
+  ![](Manual/mImages/11a.png)
   
   * Find chat search box HTML tag and type the phone number
   
