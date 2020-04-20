@@ -24,18 +24,26 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
 * Install Chrome's webdriver from http://chromedriver.chromium.org/downloads
   * chromedriver version must be the same as your Google Chrome version
   * To check your version:
+  
   ![](Manual/mImages/00.png)
+  
   ![](Manual/mImages/01.png)
+  
   * Unzip chromedriver.exe to the same folder where your project is located (chromedriver v81 is attached here)
   * Open VS Code and click on customize -> Python
+  
   ![](Manual/mImages/02.png)
+  
   * Start -> Open Folder -> Navigate to your project's folder
+  
   ![](Manual/mImages/03.png)
   
   ## WhatsappBot.py code - Step by step execution description
   * Import selenium, time, pandas and os
+  
   ![](Manual/mImages/04.png)
   
   * Write custom message and leave a _NAME_ key to repalce with contact's names
+  
   ![](Manual/mImages/05.png)
   
