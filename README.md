@@ -47,3 +47,7 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
   
   ![](Manual/mImages/05.png)
   
+  * Import CSV file with names and phone numbers and convert the generated dataframe to string
+  ![](Manual/mImages/25.png)
+  ![](Manual/mImages/06.png)
+  
