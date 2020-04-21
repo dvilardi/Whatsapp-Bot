@@ -15,6 +15,7 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
 * Chromedriver
 * Pandas
 * CSV contact list
+* Any IDE
 
 ## How to "drive"
 * Prepare your CSV contact list using the structure below:
