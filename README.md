@@ -25,7 +25,8 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
 
 * Place the images you want to attach on the images folder (no specific name format is necessary)
   * If you do not wish to attach images, simply leave the images folder empty
-![](Manual/mImages/26.PNG)
+
+![](Manual/mImages/26.png)
 
 * Create your customizable message in the mainMsg variable
   * To customize the message using the contact's name, use \_NAME\_ between underscores
@@ -34,7 +35,9 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
     * mainMsg = ["Single line message", ""]
   * To make your message with more lines, simply add more cells to the mainMsg list
     * mainMsg = ["line 1", "line 2", "line 3", ..., "line n]
-    
+
+![](Manual/mImages/05a.png)
+
 * Run the program
   * The code will wait 15 seconds for you to log in to whatsapp web using the QR code
   * After the idle time, it will loop all contacts on the CSV list to send the attachments and messages
