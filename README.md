@@ -61,7 +61,7 @@ If the program fails to run correctly, check the following probable causes:
 ```
 * CSV contacts' names different than your phone contacts list. Name must match completely, character by charater
   * It is recommended to work directly with a copy of your contacts list (downloaded from iCloud or Google) 
-* Selenium elements not found. In that case, the specific identifier strings on web.whatsapp.com source code have changed
+* Selenium elements not found. In that case, some strings on web.whatsapp.com source code have changed
   * Manually inspect each element using google chrome and change the identifier strings accordingly
   * This readme has snapshots with approximate locations of each html element (buttons, labels and inputs) used on this bot
 
