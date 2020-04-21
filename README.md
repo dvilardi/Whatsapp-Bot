@@ -47,6 +47,24 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
   * The code will wait 15 seconds for you to log in to whatsapp web using the QR code
   * After the idle time, it will loop all contacts on the CSV list to send the attachments and messages
 
+## Troubleshooting and common fixes
+If the program fails to run correctly, check the following probable causes:
+* Python PATH not added to environment variables, which causes Selenium and Pandas to not be detected
+* chromedriver.exe version different from your google chrome version
+* Slow internet connection. In that case, pages take longer to load. Solution: increase the sleep time variable
+```Python
+  st = 4
+```
+* CSV delimiter not specified correctly. Check the correct separator (comma, tab, semicolon etc.)
+```Python
+  contactsDF = pd.read_csv(csvFileName, error_bad_lines = False, sep = ";")
+```
+* CSV contacts' names different than your phone contacts list. Name must match completely, character by charater
+  * It is recommended to work directly with a copy of your contacts list (downloaded from iCloud or Google) 
+* Selenium elements not found. In that case, the specific identifier strings on web.whatsapp.com source code have changed
+  * Manually inspect each element using google chrome and change the identifier strings accordingly
+  * This readme has snapshots with approximate locations of each html element (buttons, labels and inputs) used on this bot
+
 ## Unfamiliar with Python or Selenium? See the complete setup step by step below
 * Install Python from https://www.python.org/
   * When installing, check the box "Add Python to Environment Variables"
