@@ -14,14 +14,30 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
 * Selenium
 * Chromedriver
 * Pandas
-* CSV contact list, with names __exactly__ as they are on the source Phone
+* CSV contact list
 
-## PreRequisites and installation
-* Python
-* Selenium
-* Chromedriver
-* Pandas
-* CSV contact list, with names __exactly__ as they are on the source Phone
+## How to "drive"
+* Prepare your CSV contact list using the structure below:
+
+![](Manual/mImages/25.PNG)
+
+* The CSV contact names must match __exactly__ as they are on the source Phone
+
+* Place the images you want to attach on the images folder (no specific name format is necessary)
+  * If you do not wish to attach images, simply leave the images folder empty
+![](Manual/mImages/26.PNG)
+
+* Create your customizable message in the mainMsg variable
+  * To customize the message using the contact's name, use _NAME_ between underscores
+  * If you won't send any message, uncomment the code that initializes mainMsg as an empty string
+  * If your message is in a single line, "cheat" by adding an empty string ("") on the second cell
+    * mainMsg = ["Single line message", ""]
+  * To make your message with more lines, simply add more cells to the mainMsg list
+    * mainMsg = ["line 1", "line 2", "line 3", ..., "line n]
+    
+* Run the program
+  * The code will wait 15 seconds for you to log in to whatsapp web using the QR code
+  * After the idle time, it will loop all contacts on the CSV list to send the attachments and messages
 
 ## Unfamiliar with Python or Selenium? See the complete setup step by step below
 * Install Python from https://www.python.org/
