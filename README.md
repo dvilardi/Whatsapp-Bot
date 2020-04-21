@@ -28,7 +28,7 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
 ![](Manual/mImages/26.PNG)
 
 * Create your customizable message in the mainMsg variable
-  * To customize the message using the contact's name, use _NAME_ between underscores
+  * To customize the message using the contact's name, use \_NAME\_ between underscores
   * If you won't send any message, uncomment the code that initializes mainMsg as an empty string
   * If your message is in a single line, "cheat" by adding an empty string ("") on the second cell
     * mainMsg = ["Single line message", ""]
@@ -69,7 +69,7 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
   
   ![](Manual/mImages/04.png)
   
-  * Write custom message and leave a _NAME_ key to replace with contact's names
+  * Write custom message and leave a \_NAME\_ key between underscores to replace with contact's names
   
   ![](Manual/mImages/05a.png)
   
