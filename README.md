@@ -33,11 +33,11 @@ Simple Whatsapp bot that sends custom messages and attach multiple images and vi
   * If you won't send any message, uncomment the code that initializes mainMsg as an empty string
   * If your message is in a single line, "cheat" by adding an empty string ("") on the second cell
 ```Python
-  * mainMsg = ["Single line message", ""]
+  mainMsg = ["Single line message", ""]
 ```
   * To make your message with more lines, simply add more cells to the mainMsg list
 ```Python
-  * mainMsg = ["line 1", "line 2", "line 3", ..., "line n"]
+  mainMsg = ["line 1", "line 2", "line 3", ..., "line n"]
 ```
 
 ![](Manual/mImages/05a.png)
