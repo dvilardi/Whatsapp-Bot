@@ -98,7 +98,7 @@ driver.get('https://web.whatsapp.com')
 
 print("Waiting for QR code log-in")
 
-for i in range(15,0,-1):
+for i in range(20,0,-1):
     sys.stdout.write(str(i)+' ')
     sys.stdout.flush()
     time.sleep(1)
@@ -109,7 +109,7 @@ for i in range(15,0,-1):
 
 print("Looping contacts")
 
-st = 4      # sleep time in seconds
+st = 3      # sleep time in seconds
 
 # Begin loop
 for i in range(nContacts):
@@ -119,12 +119,12 @@ for i in range(nContacts):
     cFirstName = firstName(cName)
     cNumber = onlyNumbers(contactsDF.at[i,'Phone'])
 
+    print("\n--------------------------------------------------------------------------------------------------------------------------")
     print("--------------------------------------------------------------------------------------------------------------------------")
-    print(cName)
-    print(cNumber)
+    print("--------------------------------------------------------------------------------------------------------------------------")
+    print("Contact " + str(i+1) + " of " + str(nContacts) + ": " + cName + " (" + cNumber + ")")
     print("--------------------------------------------------------------------------------------------------------------------------")
     
-
     # Get search box
     # <div class="_2S1VP copyable-text selectable-text" contenteditable="true" data-tab="3" dir="ltr"></div>
     print("Finding searchbox and writing contact's number")
@@ -132,17 +132,26 @@ for i in range(nContacts):
     searchBox = driver.find_element_by_class_name('_2S1VP')
     searchBox.click()
     time.sleep(st)
+    for i in range(0,30):
+        searchBox.send_keys(Keys.BACKSPACE)
+        searchBox.send_keys(Keys.DELETE)
+    time.sleep(st)
     
     searchBox.send_keys(cNumber)
     time.sleep(st)
     
-    # Click on the result (will use complete full name from contact list)
-    print("Clicking on the contact")
-    
-    contactBtn = driver.find_element_by_xpath(f"//span[@title='{cName}']")
-    contactBtn.click()
-    time.sleep(st)
-    
+    try: 
+        # Click on the result (will use complete full name from contact list)
+        print("Clicking on the contact")
+        
+        contactBtn = driver.find_element_by_xpath(f"//span[@title='{cName}']")
+        contactBtn.click()
+        time.sleep(st)
+
+    except:
+        print("Couldn't find contact's Whatsapp number")
+        continue #Jump to next iteration
+
     # Create custom message and send the message
     if len(mainMsg) > 0:
         # Get msgBox reference
@@ -155,12 +164,18 @@ for i in range(nContacts):
         for msg in mainMsg:
             msgBox.send_keys(msg.replace("_NAME_",cFirstName))
             msgBox.send_keys(Keys.SHIFT + Keys.ENTER)
-            
+        time.sleep(st)
+
         # Press enter (easier than looking for the "send button")
-        time.sleep(st)
-        msgBox.send_keys(Keys.ENTER)
-        time.sleep(st)
+        #time.sleep(st)
+        #msgBox.send_keys(Keys.ENTER)
+        #time.sleep(st)
         
+        # Find the send button and click it (the right way)
+        sendBtn = driver.find_element_by_xpath("//span[@data-icon='send']")
+        sendBtn.click()
+        time.sleep(st)
+
     # Send attachments
     print("Sending attachments")
     if nImages > 0:
@@ -187,7 +202,7 @@ for i in range(nContacts):
         time.sleep(st)
         
         # Send attachments
-        sendAttachments = driver.find_element_by_xpath("//span[@data-icon='send-light']")
+        sendAttachments = driver.find_element_by_xpath("//span[@data-icon='send']") # changed "send-light" to "send"
         sendAttachments.click()
 
     time.sleep(st)
