@@ -167,7 +167,7 @@ If the program fails to run correctly, check the following probable causes:
   * Repeat the process for the next contact on the CSV
  
 ## About me
-I'm Danilo Vilardi, a Brazilian mechanical engineer with 10+ different hobbies and no time to pursue them all: programmer, photographer, electronic and woodwork dyi adventurer, musician and ocasional CS gaming.
+I'm Danilo Vilardi, a Brazilian mechanical engineer with 10+ different hobbies and no time to pursue them all: programmer, photographer, electronic and woodwork dyi adventurer, musician and occasional CS gaming.
 I'm social on:
 * [Linkedin](https://www.linkedin.com/in/danilo-vilardi/)
 * [Instagram](https://www.instagram.com/dvilardi/)
